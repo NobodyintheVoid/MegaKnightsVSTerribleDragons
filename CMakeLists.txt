@@ -6,6 +6,9 @@ set(CMAKE_CXX_STANDARD 14)
 include_directories(.)
 
 add_executable(MegaKnightsVSTerribleDragons
-        Knights.h
         main.cpp
-        main.cpp)
+        main.cpp
+        Knights.cpp
+        Knights.h
+        Calvary.cpp
+        Calvary.h)
