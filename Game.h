@@ -9,9 +9,9 @@
 
 class Game {
 private:
-    int Rounds;
     int ScoreKnights;
     int ScoreDragons;
 public:
+    int Rounds;
     Game();
 };
