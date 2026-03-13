@@ -4,13 +4,16 @@
 
 #ifndef MEGAKNIGHTSVSTERRIBLEDRAGONS_CALVARY_H
 #define MEGAKNIGHTSVSTERRIBLEDRAGONS_CALVARY_H
+#include "Knights.h"
 
 
-class Calvary: public Knights {
+class SwordAndShield: public Knights {
     public:
-    VSFire = -1;
-    VSPoison = 1;
-    VSIce = 0;
+    SwordAndShield() = default;
+    std::string NameKnight = "Calvary";
+    int VSFire = -1;
+    int VSPoison = 1;
+    int VSIce = 0;
 };
 
 

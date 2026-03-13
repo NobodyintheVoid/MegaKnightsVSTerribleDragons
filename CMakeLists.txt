@@ -11,4 +11,8 @@ add_executable(MegaKnightsVSTerribleDragons
         Knights.cpp
         Knights.h
         Calvary.cpp
-        Calvary.h)
+        Calvary.h
+        Archer.cpp
+        Archer.h
+        SwordAndShield.cpp
+        SwordAndShield.h)

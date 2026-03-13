@@ -4,16 +4,19 @@
 
 #ifndef MEGAKNIGHTSVSTERRIBLEDRAGONS_KNIGHTS_H
 #define MEGAKNIGHTSVSTERRIBLEDRAGONS_KNIGHTS_H
-
+#include <string>
 
 class Knights {
-    public:
+public:
     int KnightOrDragon = 0;
-    virtual void Priest;
+    virtual void Priest(int rounds) {};
     int RoundsForPriest = 0;
+    std::string NameKnight;
+    Knights() = default;
+    bool IsTherePriest = false;
     int VSFire;
-    int VSPoison;
     int VSIce;
+    int VSPoison;
 };
 
 
