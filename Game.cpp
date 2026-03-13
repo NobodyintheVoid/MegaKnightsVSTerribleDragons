@@ -13,23 +13,23 @@ Game Game() {
     int ScoreDragons = 0;
     while (Rounds != 15) {
         Rounds++;
-        Knight = Knights("asld-pa;fa");
-        Dragon = Dragons("asplfa[psf[ap");
+        Knight = Knights("тут нужно что-то вводить по конструктору");
+        Dragon = Dragons("тут тоже");
         if (typeid(Dragon).name() == "Ice Dragon") {
-            ScoreKnights += Knight.VSIce;
+            ScoreKnights += Knight.VSIce; ///это подсчет очков с учетом священника, VSIce расчитывается в классе  Рыцарей
         }
         if (typeid(Dragon).name() == "Fire Dragon") {
-            ScoreKnights += Knight.VSFire;
+            ScoreKnights += Knight.VSFire; ///тоже самое
         } else {
-            ScoreKnights += Knight.VSPoison;
+            ScoreKnights += Knight.VSPoison;///тоже самое
         }
         if (typeid(Knight).name() == "Sword and Shield") {
-            ScoreDragons += Dragon.VSSAS;
+            ScoreDragons += Dragon.VSSAS;/// с священником, считается в Драконах
         }
-        if (typeid(Knight).name() == "Cavalry") {
+        if (typeid(Knight).name() == "Cavalry") { /// тоже самое
             ScoreDragons += Dragon.VSC;
         } else {
-            ScoreDragons += Dragon.VSA;
+            ScoreDragons += Dragon.VSA; /// тоже самое
         }
     }
 }
