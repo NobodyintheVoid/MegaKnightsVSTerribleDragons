@@ -3,3 +3,10 @@
 //
 
 #include "Archer.h"
+
+void Archer::Priest(int& rounds) {
+    if (rounds <= 3) {
+        VSFire = 1;
+        rounds++;
+    }
+}

@@ -14,6 +14,7 @@ class SwordAndShield: public Knights {
     int VSFire = -1;
     int VSPoison = 1;
     int VSIce = 0;
+    void Priest(int &rounds) override;
 };
 
 

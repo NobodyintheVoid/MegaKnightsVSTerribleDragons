@@ -9,7 +9,7 @@
 class Knights {
 public:
     int KnightOrDragon = 0;
-    virtual void Priest(int rounds) {};
+    virtual void Priest(int& rounds) = 0;
     int RoundsForPriest = 0;
     std::string NameKnight;
     Knights() = default;

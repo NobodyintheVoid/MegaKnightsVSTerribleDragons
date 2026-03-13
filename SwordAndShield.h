@@ -14,6 +14,7 @@ public:
     int VSFire = 1;
     int VSPoison = 0;
     int VSIce = -1;
+    void Priest(int &rounds) override;
 };
 
 

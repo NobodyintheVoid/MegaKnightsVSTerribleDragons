@@ -3,3 +3,10 @@
 //
 
 #include "Calvary.h"
+
+void SwordAndShield::Priest(int& rounds) {
+    if (rounds <= 3) {
+        VSIce = 1;
+        rounds++;
+    }
+}
