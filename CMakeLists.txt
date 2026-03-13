@@ -8,4 +8,5 @@ include_directories(.)
 add_executable(MegaKnightsVSTerribleDragons
         Knights.h
         main.cpp
-        main.cpp)
+        main.cpp
+        Game.cpp)
