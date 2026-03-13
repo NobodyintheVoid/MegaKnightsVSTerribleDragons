@@ -1,10 +1,11 @@
-#include "Game.h";
+#include "Game.h"
 #include <typeinfo>
 #include "Knights.h"
 #include "Dragons.h"
+#include <iostream>
 
 
-Game::Game() {
+Game Game() {
     Knights Knight;
     Dragons Dragon;
     int Rounds = 0;
@@ -12,8 +13,8 @@ Game::Game() {
     int ScoreDragons = 0;
     while (Rounds != 15) {
         Rounds++;
-        Knight = Knights();
-        Dragon = Dragons();
+        Knight = Knights("asld-pa;fa");
+        Dragon = Dragons("asplfa[psf[ap");
         if (typeid(Dragon).name() == "Ice Dragon") {
             ScoreKnights += Knight.VSIce;
         }

@@ -13,5 +13,5 @@ private:
     int ScoreKnights;
     int ScoreDragons;
 public:
-    Game(auto Dragon, auto Knight);
+    Game();
 };
