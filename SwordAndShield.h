@@ -10,6 +10,7 @@
 class SwordAndShield: public Knights {
 public:
     SwordAndShield() = default;
+    SwordAndShield(bool withPriest);
     std::string NameKnight = "Sword and Shield";
     int VSFire = 1;
     int VSPoison = 0;

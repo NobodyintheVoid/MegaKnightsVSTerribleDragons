@@ -7,9 +7,10 @@
 #include "Knights.h"
 
 
-class SwordAndShield: public Knights {
+class Calvary: public Knights {
     public:
-    SwordAndShield() = default;
+    Calvary() = default;
+    Calvary(bool withPriest);
     std::string NameKnight = "Calvary";
     int VSFire = -1;
     int VSPoison = 1;

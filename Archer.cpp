@@ -10,3 +10,7 @@ void Archer::Priest(int& rounds) {
         rounds++;
     }
 }
+
+Archer::Archer(bool withPriest) {
+    bool IsTherePriest = withPriest;
+}

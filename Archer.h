@@ -9,6 +9,7 @@
 class Archer: public Knights {
 public:
     Archer() = default;
+    Archer(bool withPriest);
     std::string NameKnight = "Archer";
     int VSFire = 0;
     int VSPoison = -1;

@@ -10,3 +10,6 @@ void SwordAndShield::Priest(int& rounds) {
         rounds++;
     }
 }
+SwordAndShield::SwordAndShield(bool withPriest) {
+    bool IsTherePriest = withPriest;
+}

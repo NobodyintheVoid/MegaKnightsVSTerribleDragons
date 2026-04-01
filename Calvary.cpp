@@ -4,9 +4,13 @@
 
 #include "Calvary.h"
 
-void SwordAndShield::Priest(int& rounds) {
+void Calvary::Priest(int& rounds) {
     if (rounds <= 3) {
         VSIce = 1;
         rounds++;
     }
+}
+
+Calvary::Calvary(bool withPriest) {
+    bool IsTherePriest = withPriest;
 }
