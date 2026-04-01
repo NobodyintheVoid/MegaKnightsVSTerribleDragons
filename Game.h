@@ -12,7 +12,6 @@ private:
     int ScoreKnights;
     int ScoreDragons;
 public:
-
     int Rounds;
     Game();
 };
