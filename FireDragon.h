@@ -13,3 +13,5 @@ public:
     int VSA = 0;
     void Electro(int& rounds) override;
 };
+
+#endif
