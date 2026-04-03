@@ -5,10 +5,10 @@
 #include <list>
 using namespace std;
 
-Dragons::Dragons() {
-	int VSA1 = 0;
-	int VSC1 = 0;
-	int VSSAS1 = 0;
+Dragons::Dragons():Game() {
+	VSA1 = 0;
+	VSC1 = 0;
+	VSSAS1 = 0;
 }
 
 
@@ -24,8 +24,8 @@ int Dragons::VSA(string NameOfKnight, string NameOfDragon) {
 		if (NameOfDragon == "Poison") {
 			VSA1 = 1;
 		}
-		return VSA1;
 	}
+	return VSA1;
 }
 
 int Dragons::VSSAS(string NameOfKnight, string NameOfDragon) {
@@ -40,8 +40,8 @@ int Dragons::VSSAS(string NameOfKnight, string NameOfDragon) {
 		if (NameOfDragon == "Poison") {
 			VSSAS1 = 0;
 		}
-		return VSSAS1;
 	}
+	return VSSAS1;
 }
 
 int Dragons::VSC(string NameOfKnight, string NameOfDragon) {
@@ -56,11 +56,11 @@ int Dragons::VSC(string NameOfKnight, string NameOfDragon) {
 		if (NameOfDragon == "Poison") {
 			VSC1 = -1;
 		}
-		return VSC1;
 	}
+	return VSC1;
 }
 
-int withE(string E, string P, int VSA, int VSC, int VSSAS) {
+int Dragons::withE(string E, string P, int VSA, int VSC, int VSSAS) {
 	if ((E == "да") && (P == "нет")) {
 		if (VSSAS == 0) { VSSAS = 1; }
 		if (VSA == 0) { VSA = 1; }
