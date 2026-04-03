@@ -1,25 +1,16 @@
-#ifndef DRAGONS_DRAGONS_H
-#define DRAGONS_DRAGONS_H
+#ifndef MEGAKNIGHTSVSTERRIBLEDRAGONS_KNIGHTS_H
+#define MEGAKNIGHTSVSTERRIBLEDRAGONS_KNIGHTS_H
 #include <string>
-#include <list>
 
-
-#include <Game.h>
-#include <iostream>
-using namespace std;
-
-class Dragons : public Game
-{
+class Dragons {
 public:
-	int VSA1;
-	int VSC1;
-	int VSSAS1;
-	Dragons();
-	int Dragons::VSA(string E, string P, string NameOfKnight, string NameOfDragon);
-	int Dragons::VSSAS(string E, string P, string NameOfKnight, string NameOfDragon);
-	int Dragons::VSC(string E, string P, string NameOfKnight, string NameOfDragon);
-	int withE(string E, string P, int VSA, int VSC, int VSSAS);
+    int KnightOrDragon1 = 0;
+    virtual void Electro(int& rounds) = 0;
+    int RoundsForElectro = 0;
+    std::string NameDragon;
+    Dragons() = default;
+    bool IsThereDragon = false;
+    int VSA;
+    int VSSAS;
+    int VSC;
 };
-
-
-#endif
