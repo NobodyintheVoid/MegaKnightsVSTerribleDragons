@@ -12,7 +12,7 @@ Dragons::Dragons() {
 }
 
 
-int Dragons::VSA(string E, string P, string NameOfKnight, string NameOfDragon) {
+int Dragons::VSA(string NameOfKnight, string NameOfDragon) {
 	int VSA1 = 0;
 	if (NameOfKnight == "A") {
 		if (NameOfDragon == "Ice") {
@@ -28,7 +28,7 @@ int Dragons::VSA(string E, string P, string NameOfKnight, string NameOfDragon) {
 	}
 }
 
-int Dragons::VSSAS(string E, string P, string NameOfKnight, string NameOfDragon) {
+int Dragons::VSSAS(string NameOfKnight, string NameOfDragon) {
 	int VSSAS1 = 0;
 	if (NameOfKnight == "SAS") {
 		if (NameOfDragon == "Ice") {
@@ -44,7 +44,7 @@ int Dragons::VSSAS(string E, string P, string NameOfKnight, string NameOfDragon)
 	}
 }
 
-int Dragons::VSC(string E, string P, string NameOfKnight, string NameOfDragon) {
+int Dragons::VSC(string NameOfKnight, string NameOfDragon) {
 	int VSC1 = 0;
 	if (NameOfKnight == "C") {
 		if (NameOfDragon == "Ice") {
