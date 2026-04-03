@@ -4,12 +4,12 @@
 
 class Dragons {
 public:
-    int KnightOrDragon1 = 0;
+    int KnightOrDragon = 1;
     virtual void Electro(int& rounds) = 0;
     int RoundsForElectro = 0;
     std::string NameDragon;
     Dragons() = default;
-    bool IsThereDragon = false;
+    bool IsThereElectro = false;
     int VSA;
     int VSSAS;
     int VSC;
