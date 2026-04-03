@@ -14,3 +14,5 @@ public:
     int VSSAS;
     int VSC;
 };
+
+#endif
